@@ -123,11 +123,32 @@ const restaurant = {
   categories: ['veg', 'non-veg', 'italian', 'organic'],
   starterMenu: ['Soup', 'Punner chilli', 'Roll'],
   mainCourse: ['Dal', 'Rice', 'Roti'],
+  openingHours: {
+    thur: {
+      open: 12,
+      close: 12
+    },
+    frid: {
+      open: 12,
+      close: 12
+    },
+    sat: {
+      open: 0,
+      close: 24
+    },
+  },
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainCourse[mainIndex]]
   }
+};
 
-}
+
+
+
+
+
+
+
 // const [a, b] = restaurant.starterMenu;
 // console.log([a], [b]);
 
@@ -148,6 +169,22 @@ const restaurant = {
 
 // const [starter, mainCourse] = restaurant.order(1, 2);
 // console.log([starter, mainCourse])
+
+//Destrcture Object
+
+const { name, categories, openingHours } = restaurant;
+console.log(name, categories, openingHours);
+
+const {
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags
+
+} = restaurant;
+
+console.log(restaurantName);
+
+
 
 
 
