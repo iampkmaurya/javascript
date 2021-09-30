@@ -140,13 +140,9 @@ const restaurant = {
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainCourse[mainIndex]]
   }
+
+
 };
-
-
-
-
-
-
 
 
 // const [a, b] = restaurant.starterMenu;
@@ -172,17 +168,36 @@ const restaurant = {
 
 //Destrcture Object
 
-const { name, categories, openingHours } = restaurant;
-console.log(name, categories, openingHours);
+// const { name, categories, openingHours } = restaurant;
+// console.log(name, categories, openingHours);
 
-const {
-  name: restaurantName,
-  openingHours: hours,
-  categories: tags
+// const {
+//   name: restaurantName,
+//   openingHours: hours,
+//   categories: tags
 
-} = restaurant;
+// } = restaurant;
 
-console.log(restaurantName);
+// console.log(restaurantName);
+
+
+
+
+
+// THE SPREAD OPERATOR .........
+const arr = [7, 8, 9];
+const newArr = [1, 2, ...arr]
+console.log(newArr);
+
+const newMenu = [...restaurant.starterMenu, 'TomatoSoup'];
+console.log(newMenu);
+
+
+//Joint 2 array 
+
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainCourse];
+console.log(menu)
 
 
 
