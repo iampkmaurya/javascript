@@ -181,32 +181,31 @@ const restaurant = {
 // console.log(restaurantName);
 
 
-
-
-
 // THE SPREAD OPERATOR .........
-const arr = [7, 8, 9];
-const newArr = [1, 2, ...arr]
-console.log(newArr);
+// const arr = [7, 8, 9];
+// const newArr = [1, 2, ...arr]
+// console.log(newArr);
 
-const newMenu = [...restaurant.starterMenu, 'TomatoSoup'];
-console.log(newMenu);
-
-
-//Joint 2 array 
+// const newMenu = [...restaurant.starterMenu, 'TomatoSoup'];
+// console.log(newMenu);
 
 
+// //Joint 2 array 
 const menu = [...restaurant.starterMenu, ...restaurant.mainCourse];
-console.log(menu)
+console.log(menu);
 
 
 
+//REST Patterns   
+const add = function (...y) {
+  let sum = 0;
+  for (let i = 0; i < y.length; i++) sum += y[i]
+  console.log(sum);
 
+}
 
-
-
-
-
+// const x = [12, 12, 12];
+add(12, 13, 14)
 
 
 
