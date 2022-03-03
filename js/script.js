@@ -190,26 +190,76 @@ const restaurant = {
 // console.log(newMenu);
 
 
-// //Joint 2 array 
-const menu = [...restaurant.starterMenu, ...restaurant.mainCourse];
-console.log(menu);
+// //Joint 2 array
+// const menu = [...restaurant.starterMenu, ...restaurant.mainCourse];
+// console.log(menu);
 
 
 
-//REST Patterns   
-const add = function (...y) {
-  let sum = 0;
-  for (let i = 0; i < y.length; i++) sum += y[i]
-  console.log(sum);
+// //REST Patterns
+// const add = function (...y) {
+//   let sum = 0;
+//   for (let i = 0; i < y.length; i++) sum += y[i]
+//   console.log(sum);
 
-}
+// }
 
 // const x = [12, 12, 12];
-add(12, 13, 14)
+// add(12, 13, 14)
+
+
+
+// var a;
+// a = 6;
+
+// console.log(a);
+
+
+// let a = 0;
+
+// if (0 === 1) {
+//   console.log("True --> this is same values");
+// } else {
+//   console.log("False");
+// }
+
+
+// In R.H.S. string "9" is converted into
+// number 9, hence returns true.
+// document.write(9 == "9");
+// let a = "String";
+// if (a === 9) {
+//   alert(true)
+
+// }
+
+// let a = null;
+// console.log(a);
 
 
 
 
+// // used for next line
+// document.write('<br>')
 
+// // Here no type conversion takes place,
+// // hence returns false
+// document.write(9 === "9");
+
+
+
+
+// var rectangle = document.getElementsByClassName('rectangle');
+// let boxWrapper = document.getElementById('box-wrapper');
+// let numberOfBox = parseInt(prompt("Please enter how many number of box you want to print"));
+// console.log(numberOfBox);
+// for (var i = 0; i < numberOfBox; i++) {
+// }
+
+
+
+// function myFunction() {
+//   document.getElementById("content").innerHTML = 'I am changed'
+// }
 
 
