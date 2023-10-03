@@ -1,1 +1,57 @@
-.rectangle {width:100px; height: 100px;}
+.rectangle {
+  width: 100px;
+  height: 100px;
+}
+.random-box {
+  width: 150px;
+  height: 100px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* .wrapper {height: 100vh; display: flex; align-items: center; justify-content: center;} */
+/* .child {height:100px; width: 100px; background-color: red;} */
+
+.greyBall {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  border-radius: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.greyBall:hover {
+  transform: scale(2);
+  transition: 0.5s;
+}
+
+div {
+  color: blue !important;
+}
+
+#test {
+  color: red;
+}
+input::placeholder {
+  /* visibility: hidden; */
+  /* display: none; */
+  /* color: transparent; */
+  visibility: clip;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  align-self: center;
+}
+/* .heroWord {
+  vertical-align: 25px;
+}
+ */
+
+p img {
+  vertical-align: text-bottom;
+}
